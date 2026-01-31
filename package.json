@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "7.2.0",
+    "@iconify-json/tabler": "1.2.26",
     "@playwright/test": "1.58.1",
     "@tailwindcss/vite": "4.1.18",
     "@testing-library/vue": "8.1.0",
@@ -41,6 +42,8 @@
     "shadcn-vue": "2.4.3",
     "tailwindcss": "4.1.18",
     "typescript": "5.9.3",
+    "unplugin-icons": "23.0.1",
+    "unplugin-vue-components": "31.0.0",
     "vite": "7.3.1",
     "vitest": "4.0.18",
     "vue-tsc": "3.2.4"

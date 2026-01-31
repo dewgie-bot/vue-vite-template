@@ -17,6 +17,29 @@ A strict, minimal Vue 3 starter with Tailwind CSS v4, ESLint antfu, Vitest, and 
 - `pnpm test:e2e` — build + run Playwright tests
 - `pnpm test:e2e:ui` — build + Playwright UI mode
 
+## Icons (Iconify + Tabler)
+
+This template is configured with:
+- `unplugin-icons`
+- `@iconify-json/tabler`
+- `unplugin-vue-components` + `IconsResolver` for component auto-import
+
+### Usage
+
+Use Tabler icons as Vue components with the `Icon` prefix:
+
+```vue
+<template>
+  <button type="button" aria-label="Search">
+    <IconTablerSearch aria-hidden="true" />
+  </button>
+</template>
+```
+
+Accessibility notes:
+- If the icon is purely decorative (used alongside text), add `aria-hidden="true"`.
+- If the icon is the only content (icon-only button), provide an accessible label (e.g. `aria-label`).
+
 ## Feature toggles
 These features are opt-in and disabled by default:
 
