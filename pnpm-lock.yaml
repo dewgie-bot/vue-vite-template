@@ -8,81 +8,81 @@ importers:
 
   .:
     dependencies:
+      class-variance-authority:
+        specifier: 0.7.1
+        version: 0.7.1
+      clsx:
+        specifier: 2.1.1
+        version: 2.1.1
+      lucide-vue-next:
+        specifier: 0.563.0
+        version: 0.563.0(vue@3.5.27(typescript@5.9.3))
+      tailwind-merge:
+        specifier: 3.4.0
+        version: 3.4.0
       vue:
-        specifier: latest
+        specifier: 3.5.27
         version: 3.5.27(typescript@5.9.3)
       vue-router:
-        specifier: latest
+        specifier: 5.0.1
         version: 5.0.1(@vue/compiler-sfc@3.5.27)(vue@3.5.27(typescript@5.9.3))
     devDependencies:
       '@antfu/eslint-config':
-        specifier: latest
+        specifier: 7.2.0
         version: 7.2.0(@vue/compiler-sfc@3.5.27)(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.18(@types/node@25.1.0)(happy-dom@20.4.0)(jiti@2.6.1)(lightningcss@1.30.2)(stylus@0.57.0)(yaml@2.8.2))
       '@playwright/test':
-        specifier: latest
+        specifier: 1.58.1
         version: 1.58.1
       '@tailwindcss/vite':
-        specifier: latest
+        specifier: 4.1.18
         version: 4.1.18(vite@7.3.1(@types/node@25.1.0)(jiti@2.6.1)(lightningcss@1.30.2)(stylus@0.57.0)(yaml@2.8.2))
       '@testing-library/vue':
-        specifier: latest
+        specifier: 8.1.0
         version: 8.1.0(@vue/compiler-sfc@3.5.27)(vue@3.5.27(typescript@5.9.3))
       '@types/node':
-        specifier: latest
+        specifier: 25.1.0
         version: 25.1.0
       '@vitejs/plugin-vue':
-        specifier: latest
+        specifier: 6.0.3
         version: 6.0.3(vite@7.3.1(@types/node@25.1.0)(jiti@2.6.1)(lightningcss@1.30.2)(stylus@0.57.0)(yaml@2.8.2))(vue@3.5.27(typescript@5.9.3))
       '@vitest/coverage-v8':
-        specifier: latest
+        specifier: 4.0.18
         version: 4.0.18(vitest@4.0.18(@types/node@25.1.0)(happy-dom@20.4.0)(jiti@2.6.1)(lightningcss@1.30.2)(stylus@0.57.0)(yaml@2.8.2))
       '@vue/test-utils':
-        specifier: latest
+        specifier: 2.4.6
         version: 2.4.6
-      class-variance-authority:
-        specifier: latest
-        version: 0.7.1
-      clsx:
-        specifier: latest
-        version: 2.1.1
       eslint:
-        specifier: latest
+        specifier: 9.39.2
         version: 9.39.2(jiti@2.6.1)
       happy-dom:
-        specifier: latest
+        specifier: 20.4.0
         version: 20.4.0
       husky:
-        specifier: latest
+        specifier: 9.1.7
         version: 9.1.7
-      lucide-vue-next:
-        specifier: latest
-        version: 0.563.0(vue@3.5.27(typescript@5.9.3))
       playwright:
-        specifier: latest
+        specifier: 1.58.1
         version: 1.58.1
       postcss:
-        specifier: latest
+        specifier: 8.5.6
         version: 8.5.6
       shadcn-vue:
-        specifier: latest
+        specifier: 2.4.3
         version: 2.4.3(eslint@9.39.2(jiti@2.6.1))(hono@4.11.7)(magicast@0.5.1)(vue@3.5.27(typescript@5.9.3))
-      tailwind-merge:
-        specifier: latest
-        version: 3.4.0
       tailwindcss:
-        specifier: latest
+        specifier: 4.1.18
         version: 4.1.18
       typescript:
-        specifier: latest
+        specifier: 5.9.3
         version: 5.9.3
       vite:
-        specifier: latest
+        specifier: 7.3.1
         version: 7.3.1(@types/node@25.1.0)(jiti@2.6.1)(lightningcss@1.30.2)(stylus@0.57.0)(yaml@2.8.2)
       vitest:
-        specifier: latest
+        specifier: 4.0.18
         version: 4.0.18(@types/node@25.1.0)(happy-dom@20.4.0)(jiti@2.6.1)(lightningcss@1.30.2)(stylus@0.57.0)(yaml@2.8.2)
       vue-tsc:
-        specifier: latest
+        specifier: 3.2.4
         version: 3.2.4(typescript@5.9.3)
 
 packages:

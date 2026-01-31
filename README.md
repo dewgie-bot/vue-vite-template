@@ -38,8 +38,8 @@ Tailwind entry lives at `src/styles/tailwind.css` and is imported in `src/main.t
 This template keeps `src/components/ui` in place for shadcn-vue components. Use the CLI to add more:
 
 ```bash
-pnpm dlx shadcn-vue@latest init
-pnpm dlx shadcn-vue@latest add button
+pnpm dlx shadcn-vue@2.4.3 init
+pnpm dlx shadcn-vue@2.4.3 add button
 ```
 
 ## Commit message convention
