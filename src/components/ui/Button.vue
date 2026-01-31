@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { ClassValue } from 'clsx'
 import { cva } from 'class-variance-authority'
 import { computed } from 'vue'
 import { cn } from '@/lib/utils'
@@ -10,7 +11,7 @@ type ButtonSize = 'sm' | 'md'
 interface ButtonProps {
   variant?: ButtonVariant
   size?: ButtonSize
-  class?: string
+  class?: ClassValue
   type?: 'button' | 'submit' | 'reset'
 }
 

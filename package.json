@@ -11,6 +11,8 @@
     "lint:fix": "eslint . --fix",
     "typecheck": "vue-tsc --noEmit",
     "test:unit": "vitest run",
+    "test:unit:watch": "vitest",
+    "test:unit:coverage": "vitest run --coverage",
     "test:e2e": "pnpm build && playwright test",
     "test:e2e:ui": "pnpm build && playwright test --ui",
     "prepare": "husky install"

@@ -8,3 +8,12 @@ declare module '*.vue' {
   const component: DefineComponent<object, object, any>
   export default component
 }
+
+interface ImportMetaEnv {
+  readonly VITE_ENABLE_ROUTER?: 'true' | 'false'
+  readonly VITE_ENABLE_SHADCN_DEMO?: 'true' | 'false'
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}

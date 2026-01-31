@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import ShadcnDemo from './components/ShadcnDemo.vue'
+import { defineAsyncComponent } from 'vue'
 import { useTheme } from './composables/useTheme'
 
 const enableRouter = import.meta.env.VITE_ENABLE_ROUTER === 'true'
 const enableShadcnDemo = import.meta.env.VITE_ENABLE_SHADCN_DEMO === 'true'
+
+const ShadcnDemo = enableShadcnDemo
+  ? defineAsyncComponent(() => import('./components/ShadcnDemo.vue'))
+  : null
 
 const { isDark, label, toggleTheme } = useTheme()
 </script>
@@ -87,7 +91,7 @@ const { isDark, label, toggleTheme } = useTheme()
       </section>
 
       <section v-if="enableShadcnDemo" class="space-y-4">
-        <ShadcnDemo />
+        <component :is="ShadcnDemo" />
       </section>
 
       <section v-if="enableRouter" class="space-y-4">
