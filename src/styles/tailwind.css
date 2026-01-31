@@ -1,3 +1,8 @@
 @import "tailwindcss";
 
-/* Tailwind v4 entry point: includes base, components, and utilities. */
+/* Tailwind v4 (CSS-first config)
+   We use @source directives instead of a tailwind.config.* content array.
+*/
+@source "../../index.html";
+@source "../**/*.{vue,ts}";
+
