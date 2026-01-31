@@ -4,5 +4,6 @@
   },
   "eslint.validate": ["javascript", "typescript", "vue"],
   "typescript.tsdk": "node_modules/typescript/lib",
-  "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.lint.suggestCanonicalClasses": "ignore"
 }
