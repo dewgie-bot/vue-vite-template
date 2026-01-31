@@ -6,3 +6,9 @@
 @source "../../index.html";
 @source "../**/*.{vue,ts}";
 
+/*
+  Enable class-based dark mode.
+  Tailwind v4 defaults to media-based dark mode unless you define a custom variant.
+*/
+@custom-variant dark (&:where(.dark, .dark *));
+

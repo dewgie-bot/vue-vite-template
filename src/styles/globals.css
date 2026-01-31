@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
   font-family: "Geist", "Space Grotesk", "Inter", system-ui, sans-serif;
 }
 
@@ -9,7 +9,11 @@
 
 body {
   margin: 0;
-  background: #f8fafc;
+  background: #ffffff;
+}
+
+html.dark body {
+  background: #09090b;
 }
 
 code {

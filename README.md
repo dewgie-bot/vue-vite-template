@@ -26,6 +26,14 @@ These features are opt-in and disabled by default:
 ## Tailwind v4
 Tailwind entry lives at `src/styles/tailwind.css` and is imported in `src/main.ts`.
 
+## Theme (light/dark)
+- Theme toggle lives in `src/App.vue`.
+- Preference is stored in `localStorage` under `theme` (`light` | `dark`).
+- First load respects `prefers-color-scheme` when no stored preference exists.
+- The `dark` class is toggled on `<html>` for Tailwind class-based theming.
+- To avoid a light→dark flash, `index.html` applies the initial theme before Vue mounts.
+- Tailwind class-based dark mode is enabled via `@custom-variant dark` in `src/styles/tailwind.css`.
+
 ## shadcn-vue
 This template keeps `src/components/ui` in place for shadcn-vue components. Use the CLI to add more:
 
