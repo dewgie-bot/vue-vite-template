@@ -1,0 +1,47 @@
+{
+  "name": "vue-vite-ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "vue-tsc --noEmit",
+    "test:unit": "vitest run",
+    "test:e2e": "pnpm build && playwright test",
+    "test:e2e:ui": "pnpm build && playwright test --ui",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "latest",
+    "@playwright/test": "latest",
+    "@tailwindcss/vite": "latest",
+    "@testing-library/vue": "latest",
+    "@types/node": "latest",
+    "@vitejs/plugin-vue": "latest",
+    "@vitest/coverage-v8": "latest",
+    "@vue/test-utils": "latest",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "eslint": "latest",
+    "happy-dom": "latest",
+    "husky": "latest",
+    "lucide-vue-next": "latest",
+    "playwright": "latest",
+    "postcss": "latest",
+    "shadcn-vue": "latest",
+    "tailwind-merge": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "latest",
+    "vue-tsc": "latest"
+  }
+}

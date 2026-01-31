@@ -1,0 +1,17 @@
+:root {
+  color-scheme: light;
+  font-family: "Geist", "Space Grotesk", "Inter", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+}
+
+code {
+  font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", "Menlo", monospace;
+}
