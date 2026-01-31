@@ -12,6 +12,7 @@ const ShadcnDemo = enableShadcnDemo
 const { isDark, label, toggleTheme } = useTheme()
 </script>
 
+// This is a test comment
 <template>
   <div
     class="min-h-screen bg-gradient-to-b from-zinc-50 via-white to-zinc-100 text-zinc-950 dark:from-zinc-950 dark:via-zinc-950 dark:to-zinc-900 dark:text-zinc-50"
