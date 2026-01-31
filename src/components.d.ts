@@ -13,7 +13,9 @@ declare module 'vue' {
   export interface GlobalComponents {
     Button: typeof import('./components/ui/Button.vue')['default']
     Card: typeof import('./components/ui/Card.vue')['default']
+    IconTablerMoon: typeof import('~icons/tabler/moon')['default']
     IconTablerSearch: typeof import('~icons/tabler/search')['default']
+    IconTablerSun: typeof import('~icons/tabler/sun')['default']
     RouterHome: typeof import('./components/RouterHome.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

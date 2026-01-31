@@ -7,7 +7,7 @@ export default defineConfig({
     baseURL: 'http://127.0.0.1:4174',
   },
   webServer: {
-    command: 'pnpm preview -- --host 127.0.0.1 --port 4174',
+    command: 'pnpm preview --host 127.0.0.1 --port 4174',
     url: 'http://127.0.0.1:4174',
     // Avoid reusing an unrelated server running on the same port (common in monorepos/templates).
     reuseExistingServer: false,

@@ -5,7 +5,7 @@ import { useTheme } from './composables/useTheme'
 const enableRouter = import.meta.env.VITE_ENABLE_ROUTER === 'true'
 const enableShadcnDemo = import.meta.env.VITE_ENABLE_SHADCN_DEMO === 'true'
 
-const { label, toggleTheme } = useTheme()
+const { isDark, label, toggleTheme } = useTheme()
 </script>
 
 <template>
@@ -29,9 +29,11 @@ const { label, toggleTheme } = useTheme()
 
           <button
             type="button"
-            class="inline-flex h-10 shrink-0 items-center justify-center rounded-lg border border-zinc-200 bg-white px-3 text-sm font-medium text-zinc-900 shadow-sm transition hover:bg-zinc-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900 dark:focus-visible:ring-zinc-500 dark:focus-visible:ring-offset-zinc-950"
+            class="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-lg border border-zinc-200 bg-white px-3 text-sm font-medium text-zinc-900 shadow-sm transition hover:bg-zinc-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900 dark:focus-visible:ring-zinc-500 dark:focus-visible:ring-offset-zinc-950"
             @click="toggleTheme"
           >
+            <IconTablerMoon v-if="isDark" aria-hidden="true" class="h-4 w-4 text-zinc-500 dark:text-zinc-400" />
+            <IconTablerSun v-else aria-hidden="true" class="h-4 w-4 text-zinc-500 dark:text-zinc-400" />
             Theme: {{ label }}
           </button>
         </div>
