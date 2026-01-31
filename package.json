@@ -39,8 +39,6 @@
     "happy-dom": "20.4.0",
     "husky": "9.1.7",
     "lint-staged": "15.2.0",
-    "playwright": "1.58.1",
-    "postcss": "8.5.6",
     "shadcn-vue": "2.4.3",
     "tailwindcss": "4.1.18",
     "typescript": "5.9.3",
