@@ -1,6 +1,6 @@
 import { fileURLToPath, URL } from 'node:url'
-import { defineConfig } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   plugins: [vue()],
@@ -13,5 +13,7 @@ export default defineConfig({
     environment: 'happy-dom',
     globals: true,
     setupFiles: ['./src/tests/unit/setup.ts'],
+    include: ['src/tests/unit/**/*.spec.ts'],
+    exclude: ['tests/e2e/**', 'node_modules/**', 'dist/**'],
   },
 })

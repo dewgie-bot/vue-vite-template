@@ -21,7 +21,9 @@ const enableShadcnDemo = import.meta.env.VITE_ENABLE_SHADCN_DEMO === 'true'
       </header>
 
       <section class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold text-slate-900">Feature toggles</h2>
+        <h2 class="text-lg font-semibold text-slate-900">
+          Feature toggles
+        </h2>
         <ul class="mt-3 space-y-2 text-sm text-slate-600">
           <li>
             <span class="font-medium text-slate-800">Router:</span>
