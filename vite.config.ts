@@ -13,12 +13,16 @@ export default defineConfig({
       "dist/**",
       "node_modules/**",
       "playwright-report/**",
+      "src/components.d.ts",
       "test-results/**",
     ],
     options: {
       typeAware: true,
       typeCheck: true,
     },
+  },
+  fmt: {
+    ignorePatterns: ["src/components.d.ts"],
   },
   test: {
     environment: "happy-dom",
