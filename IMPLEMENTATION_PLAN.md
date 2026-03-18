@@ -5,6 +5,7 @@ Purpose: Implementation-ready plan for a Vue + Vite + TypeScript template using 
 ---
 
 ## 1) Exact Folder Structure
+
 ```
 vue-vite-ts/
 ├─ .github/
@@ -50,7 +51,9 @@ vue-vite-ts/
 ---
 
 ## 2) Package Scripts (Exact)
+
 These scripts are required and will be implemented in `package.json`:
+
 - `dev` — Vite dev server
 - `build` — Vite build
 - `preview` — Vite preview
@@ -66,11 +69,14 @@ Husky requires a `prepare` script to install hooks (documented in plan).
 ---
 
 ## 3) Dependency Choices (Exact)
+
 **Runtime dependencies** (core app):
+
 - `vue` (latest stable)
 - `vue-router` (for routing; standard SPA structure)
 
 **Dev dependencies**:
+
 - `vite` + `@vitejs/plugin-vue` (Vite + Vue support)
 - `typescript` (latest stable)
 - `vue-tsc` (type checking for Vue SFCs)
@@ -88,13 +94,16 @@ Husky requires a `prepare` script to install hooks (documented in plan).
 - `husky` (Git hooks)
 
 Notes:
+
 - No Prettier.
 - pnpm only.
 
 ---
 
 ## 4) Tailwind CSS v4 Integration Steps (No Code)
+
 Follow the **Tailwind v4 install flow** (not v3):
+
 1. Add Tailwind v4 as a dev dependency.
 2. Create the Tailwind entry file in `src/styles/tailwind.css`.
 3. Ensure Tailwind’s base + utilities directives exist in that entry file.
@@ -110,6 +119,7 @@ Follow the **Tailwind v4 install flow** (not v3):
 ---
 
 ## 5) shadcn-vue Integration Approach
+
 1. Use `shadcn-vue` CLI to initialize with Vite + Vue + Tailwind v4 (ensure correct preset).
 2. Configure component output to `src/components/ui/`.
 3. Ensure Tailwind v4 theme tokens align with shadcn-vue expectations.
@@ -123,6 +133,7 @@ Follow the **Tailwind v4 install flow** (not v3):
 ---
 
 ## 6) ESLint (antfu) Setup
+
 - Use `eslint.config.ts` with `@antfu/eslint-config`.
 - Ensure Vue + TypeScript compatibility (antfu defaults cover Vue; verify configuration).
 - Provide `lint` and `lint:fix` scripts.
@@ -130,6 +141,7 @@ Follow the **Tailwind v4 install flow** (not v3):
 ---
 
 ## 7) Vitest Setup Strategy
+
 - Place unit tests in `src/tests/unit/`.
 - Coverage via `@vitest/coverage-v8`.
 - Include Vue test utils and testing-library.
@@ -138,6 +150,7 @@ Follow the **Tailwind v4 install flow** (not v3):
 ---
 
 ## 8) Playwright E2E Setup Strategy
+
 - Place e2e tests in `tests/e2e/`.
 - Playwright config to run against built preview server (Vite preview).
 - Provide scripts:
@@ -148,7 +161,9 @@ Follow the **Tailwind v4 install flow** (not v3):
 ---
 
 ## 9) CI Outline (GitHub Actions)
+
 `ci.yml` steps:
+
 1. Checkout repo
 2. Setup Node LTS
 3. Install pnpm
@@ -161,6 +176,7 @@ Follow the **Tailwind v4 install flow** (not v3):
 ---
 
 ## 10) Husky Hook Plan
+
 - Add `prepare` script to install husky hooks on install.
 - Create `pre-commit` hook:
   - `pnpm lint:fix && pnpm typecheck`
@@ -168,11 +184,14 @@ Follow the **Tailwind v4 install flow** (not v3):
 ---
 
 ## 11) Editor Settings
+
 **.vscode/settings.json**
+
 - Enable ESLint on save.
 - Use TypeScript/JS formatting via ESLint (no Prettier).
 
 **.vscode/extensions.json**
+
 - Recommend:
   - ESLint
   - Volar
@@ -180,12 +199,15 @@ Follow the **Tailwind v4 install flow** (not v3):
   - Playwright Test Runner
 
 **.editorconfig**
+
 - Consistent line endings, charset, indent rules.
 
 ---
 
 ## 12) Commit Message Convention
+
 Document in README:
+
 ```
 Summary line (imperative, <= 72 chars)
 
@@ -195,6 +217,7 @@ Detailed body explaining what and why
 ---
 
 ## 13) Acceptance Checklist
+
 - [ ] `pnpm dev` runs the template without errors.
 - [ ] `pnpm build` and `pnpm preview` succeed.
 - [ ] `pnpm lint` and `pnpm lint:fix` succeed.
@@ -209,6 +232,7 @@ Detailed body explaining what and why
 ---
 
 ## Decisions (from TK)
+
 1. **Router**: keep routing optional; provide an opt-in “with-router” variant/toggle.
 2. **Routing style**: standard `vue-router` config only (no file-based routing plugin).
 3. **Playwright in CI**: run against production-like output: `pnpm build` + `pnpm preview`.
@@ -218,6 +242,7 @@ Detailed body explaining what and why
 ---
 
 ## Progress
+
 - [x] Scaffolded base Vite + Vue + TS structure with configs, scripts, and initial app shell.
 - [x] Added optional router toggle and minimal demo components behind env flags.
 - [x] Added Tailwind v4 entry, config, and Vite plugin wiring.

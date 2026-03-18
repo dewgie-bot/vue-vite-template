@@ -9,22 +9,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
+      - uses: voidzero-dev/setup-vp@v1
         with:
-          version: 9
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 'lts/*'
-          cache: pnpm
+          node-version: "24"
+          cache: true
       - name: Install dependencies
-        run: pnpm install
+        run: vp install
       - name: Install Playwright browsers
-        run: pnpm exec playwright install --with-deps
-      - name: Lint
-        run: pnpm lint
-      - name: Typecheck
-        run: pnpm typecheck
-      - name: Unit tests
-        run: pnpm test:unit
+        run: vp exec playwright install --with-deps
+      - name: Check
+        run: vp check
+      - name: Test
+        run: vp test
+      - name: Build
+        run: vp build
       - name: E2E tests
-        run: pnpm test:e2e
+        run: vp run test:e2e

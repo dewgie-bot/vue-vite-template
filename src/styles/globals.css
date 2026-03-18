@@ -17,5 +17,7 @@ html.dark body {
 }
 
 code {
-  font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", "Menlo", monospace;
+  font-family:
+    "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Consolas, "Liberation Mono",
+    "Menlo", monospace;
 }

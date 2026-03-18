@@ -1,19 +1,19 @@
-/// <reference types="vite/client" />
+/// <reference types="vite-plus/client" />
 
 // Let the TypeScript language server resolve `.vue` imports in `.ts` files.
 // (vue-tsc understands this automatically, but VS Code can show TS2307 without the shim.)
-declare module '*.vue' {
-  import type { DefineComponent } from 'vue'
+declare module "*.vue" {
+  import type { DefineComponent } from "vue";
 
-  const component: DefineComponent<object, object, any>
-  export default component
+  const component: DefineComponent<object, object, any>;
+  export default component;
 }
 
 interface ImportMetaEnv {
-  readonly VITE_ENABLE_ROUTER?: 'true' | 'false'
-  readonly VITE_ENABLE_SHADCN_DEMO?: 'true' | 'false'
+  readonly VITE_ENABLE_ROUTER?: "true" | "false";
+  readonly VITE_ENABLE_SHADCN_DEMO?: "true" | "false";
 }
 
 interface ImportMeta {
-  readonly env: ImportMetaEnv
+  readonly env: ImportMetaEnv;
 }
