@@ -1,6 +1,6 @@
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
+    "VoidZero.vite-plus-extension-pack",
     "vue.volar",
     "bradlc.vscode-tailwindcss",
     "ms-playwright.playwright"
